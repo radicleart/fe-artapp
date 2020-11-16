@@ -47,6 +47,8 @@ const projectService = {
           const rootFile = JSON.parse(file)
           resolve(rootFile.projects)
         }
+      }).catch((error) => {
+        console.log(error)
       })
     })
   },

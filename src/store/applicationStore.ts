@@ -114,7 +114,7 @@ const applicationStore = {
           functionArgs: []
         }
         store.dispatch('stacksStore/callContractReadOnly', config).then((response) => {
-          const baseTokenUri = utils.toObjectString(response, 'base-token-uri')
+          const baseTokenUri = utils.toObjectString(response)
           application.baseTokenUri = baseTokenUri
           commit('addAppToAppmap', application)
           resolve(application)

@@ -51,7 +51,7 @@ const utils = {
       storageModel: o.value.data['storage-model'].value
     }
   },
-  toObjectString: function (o, key) {
+  toObjectString: function (o: any) {
     const td = new TextDecoder('utf-8')
     return td.decode(o.buffer)
   }

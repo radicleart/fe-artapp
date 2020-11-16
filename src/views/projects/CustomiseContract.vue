@@ -149,7 +149,7 @@ export default {
 (define-read-only (get-token-info (token-id (buff 32)))
     (map-get? nongibles ((token-id token-id))))
 
-(define-public (create-nongible (token-id (buff 32)))
+(define-public (mint-token (token-id (buff 32)))
     (begin
         (asserts! (>= (stx-get-balance tx-sender) (var-get mint-price)) (err 2))
         (as-contract

@@ -109,8 +109,24 @@ const searchStore = {
             reject(new Error('Unable index record: ' + error))
           })
         } else {
-          return store.dispatch('searchStore/findByProjectId')
+          query += '*'
+          searchIndexService.findAssets().then((resultSet) => {
+            commit('setSearchResults', resultSet)
+            resolve(resultSet)
+          }).catch((error) => {
+            reject(new Error('Unable index record: ' + error))
+          })
         }
+      })
+    },
+    findByProjectId ({ commit }: any, projectId: string) {
+      return new Promise((resolve, reject) => {
+        searchIndexService.findByProjectId(projectId).then((resultSet) => {
+          commit('setSearchResults', resultSet)
+          resolve(resultSet)
+        }).catch((error) => {
+          reject(new Error('Unable index record: ' + error))
+        })
       })
     }
   }

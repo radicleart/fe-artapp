@@ -38,7 +38,7 @@
         <template v-slot:button-content class="">
           <span>Gallery</span>
         </template>
-        <b-dropdown-item>Type of Collectables</b-dropdown-item>
+        <b-dropdown-item>Type of Collectibles</b-dropdown-item>
         <b-dropdown-item>All</b-dropdown-item>
         <b-dropdown-item>Popular</b-dropdown-item>
         <b-dropdown-item>On Sale</b-dropdown-item>
