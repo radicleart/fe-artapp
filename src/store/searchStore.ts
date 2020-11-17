@@ -68,9 +68,9 @@ const searchStore = {
         })
       })
     },
-    findArtworkById ({ commit }: any, assetHash: string) {
+    findAssetById ({ commit }: any, assetHash: string) {
       return new Promise((resolve, reject) => {
-        searchIndexService.findArtworkById(assetHash).then((results) => {
+        searchIndexService.findAssetById(assetHash).then((results) => {
           commit('addSearchResult', results[0])
           resolve(results[0])
         }).catch((error) => {
@@ -102,7 +102,7 @@ const searchStore = {
       return new Promise((resolve, reject) => {
         if (query && query.length > 0) {
           query += '*'
-          searchIndexService.findArtworkByTitleOrDescriptionOrCategoryOrKeyword(query).then((resultSet) => {
+          searchIndexService.findByTitleOrDescriptionOrCategoryOrKeyword(query).then((resultSet) => {
             commit('setSearchResults', resultSet)
             resolve(resultSet)
           }).catch((error) => {

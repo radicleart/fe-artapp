@@ -28,7 +28,7 @@
             <b-dropdown-item>Artist</b-dropdown-item>
             <b-dropdown-item>Collection</b-dropdown-item>
             <b-dropdown-item>On Auction</b-dropdown-item>
-            <b-dropdown-item>On Sale</b-dropdown-item>
+            <b-dropdown-item>Buy Now</b-dropdown-item>
           </b-dropdown>
         </template>
         <b-form-input v-model="query"  size="sm" class="mr-sm-2" placeholder=""></b-form-input>

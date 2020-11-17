@@ -41,7 +41,7 @@
         <b-dropdown-item>Type of Collectibles</b-dropdown-item>
         <b-dropdown-item>All</b-dropdown-item>
         <b-dropdown-item>Popular</b-dropdown-item>
-        <b-dropdown-item>On Sale</b-dropdown-item>
+        <b-dropdown-item>Buy Now</b-dropdown-item>
         <b-dropdown-item>On Auction</b-dropdown-item>
         <b-dropdown-item>On Offer</b-dropdown-item>
         <b-dropdown-item>Recently Added</b-dropdown-item>
@@ -58,7 +58,7 @@
             <b-dropdown-item>Type of Collectables</b-dropdown-item>
             <b-dropdown-item>All</b-dropdown-item>
             <b-dropdown-item>Popular</b-dropdown-item>
-            <b-dropdown-item>On Sale</b-dropdown-item>
+            <b-dropdown-item>Buy Now</b-dropdown-item>
             <b-dropdown-item>On Auction</b-dropdown-item>
             <b-dropdown-item>On Offer</b-dropdown-item>
             <b-dropdown-item>Recently Added</b-dropdown-item>
@@ -67,7 +67,7 @@
             <b-dropdown-item>Type of Collectables</b-dropdown-item>
             <b-dropdown-item>All</b-dropdown-item>
             <b-dropdown-item>Popular</b-dropdown-item>
-            <b-dropdown-item>On Sale</b-dropdown-item>
+            <b-dropdown-item>Buy Now</b-dropdown-item>
             <b-dropdown-item>On Auction</b-dropdown-item>
             <b-dropdown-item>On Offer</b-dropdown-item>
             <b-dropdown-item>Recently Added</b-dropdown-item>

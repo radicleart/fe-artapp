@@ -115,18 +115,18 @@ const searchIndexService = {
       })
     })
   },
-  findArtworkById: function (query: string) {
+  findAssetById: function (assetHash: string) {
     return new Promise(function (resolve, reject) {
-      axios.get(SEARCH_API_PATH + '/findArtworkByTitleOrDescriptionOrCategoryOrKeyword/id' + '?q=' + query).then((result) => {
+      axios.get(SEARCH_API_PATH + '/v1/asset/' + assetHash).then((result) => {
         resolve(result.data.details)
       }).catch((error) => {
         reject(new Error('Unable index record: ' + error))
       })
     })
   },
-  findArtworkByTitleOrDescriptionOrCategoryOrKeyword: function (query: string) {
+  findByTitleOrDescriptionOrCategoryOrKeyword: function (query: string) {
     return new Promise(function (resolve, reject) {
-      axios.get(SEARCH_API_PATH + '/findArtworkByTitleOrDescriptionOrCategoryOrKeyword/title' + '?q=' + query).then((result) => {
+      axios.get(SEARCH_API_PATH + '/findByTitleOrDescriptionOrCategoryOrKeyword/title' + '?q=' + query).then((result) => {
         resolve(result.data.details)
       }).catch((error) => {
         reject(new Error('Unable index record: ' + error))
