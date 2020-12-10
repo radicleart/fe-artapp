@@ -38,7 +38,7 @@
         <template v-slot:button-content class="">
           <span>Gallery</span>
         </template>
-        <b-dropdown-item>Type of Collectibles</b-dropdown-item>
+        <b-dropdown-item>Find Collectibles</b-dropdown-item>
         <b-dropdown-item>All</b-dropdown-item>
         <b-dropdown-item>Popular</b-dropdown-item>
         <b-dropdown-item>Buy Now</b-dropdown-item>
@@ -74,25 +74,10 @@
           </div>
         </div>
       </b-nav-item-dropdown>
-      <b-nav-item class="text-info">Become a Contributer</b-nav-item>
+      <b-nav-item><router-link to="/admin-app">Become a Contributor</router-link></b-nav-item>
     </b-navbar-nav>
     <b-navbar-nav class="ml-xl-auto align-items-xl-center">
-      <b-nav-item>How It Works</b-nav-item>
-      <b-nav-item>About Risidio</b-nav-item>
-      <b-nav-item>Help</b-nav-item>
-      <!-- <b-nav-item-dropdown class="text-white ml-3" right v-if="loggedIn" no-caret>
-        <template v-slot:button-content class="v-nav-user">
-          <b-avatar class="bg-info"></b-avatar>
-        </template>
-        <b-dropdown-item><span>{{ username }}</span></b-dropdown-item>
-        <b-dropdown-divider></b-dropdown-divider>
-        <b-dropdown-item><span>Balance: {{ balance }}</span></b-dropdown-item>
-        <b-dropdown-item><span>Addr: {{ stxAddress }}</span></b-dropdown-item>
-        <b-dropdown-divider></b-dropdown-divider>
-        <b-dropdown-item><router-link to="/admin-app"><i class="far fa-play-circle"></i> Connect Project</router-link></b-dropdown-item>
-        <b-dropdown-item><router-link to="/my-items"><i class="far fa-folder-open"></i> My Collectibles</router-link></b-dropdown-item>
-        <b-dropdown-item><span @click="logout()"><i class="fas fa-sign-out-alt"></i> Logout</span></b-dropdown-item>
-      </b-nav-item-dropdown>-->
+      <b-nav-item><router-link to="/community?uid=how-it-works">How It Works</router-link></b-nav-item>
     </b-navbar-nav>
   </b-collapse>
   <b-navbar-nav class="navbar_login d-xl-flex d-none">

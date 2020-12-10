@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="px-5"><p class="text-sm">My Dashboard</p></div>
-    <div class="px-5"><p class="text-sm"><b-icon icon="person-fill"></b-icon> Account</p></div>
+    <div class="px-5"><p class="text-sm"><b-icon icon="person"></b-icon> Account</p></div>
     <div class="px-5 pb-4 border-bottom">
       <p class="text-sm"><b-icon icon="wallet2"></b-icon> Wallet</p>
       <div class="ml-4 d-flex justify-content-between">

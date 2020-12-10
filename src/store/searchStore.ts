@@ -70,9 +70,8 @@ const searchStore = {
     },
     findAssetByHash ({ commit }: any, assetHash: string) {
       return new Promise((resolve, reject) => {
-        searchIndexService.findAssetByHash(assetHash).then((results) => {
-          commit('addSearchResult', results[0])
-          resolve(results[0])
+        searchIndexService.findAssetByHash(assetHash).then((response: any) => {
+          resolve(response.data)
         }).catch((error) => {
           reject(new Error('Unable index record: ' + error))
         })

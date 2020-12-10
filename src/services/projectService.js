@@ -91,15 +91,6 @@ const projectService = {
       })
     })
   },
-  registerProject: function (project) {
-    return new Promise((resolve, reject) => {
-      axios.post(SEARCH_API_PATH + '/register', project).then((response) => {
-        resolve(response)
-      }).catch((error) => {
-        reject(error)
-      })
-    })
-  },
   saveProject: function (rootFile) {
     return new Promise((resolve) => {
       rootFile.updated = moment({}).valueOf()

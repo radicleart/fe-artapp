@@ -18,18 +18,6 @@ const searchIndexService = {
 
   addRecord: function (projectModel: any) {
     return new Promise(function (resolve, reject) {
-      /**
-      const project: any = {
-        domain: projectModel.domain,
-        indexFiles: [{
-          indexFileName: PROJECT_ROOT_PATH,
-          indexObjType: 'project'
-        }],
-        owner: projectModel.owner,
-        projectId: projectModel.projectId,
-        storeageModel: 'gaia'
-      }
-      **/
       axios.post(SEARCH_API_PATH + '/addRecord', projectModel).then((result) => {
         resolve(result)
       })
@@ -117,8 +105,8 @@ const searchIndexService = {
   },
   findAssetByHash: function (assetHash: string) {
     return new Promise(function (resolve, reject) {
-      axios.get(SEARCH_API_PATH + '/v1/asset/' + assetHash).then((result) => {
-        resolve(result.data.details)
+      axios.get(SEARCH_API_PATH + '/v1/asset/' + assetHash).then((asset) => {
+        resolve(asset)
       }).catch((error) => {
         reject(new Error('Unable index record: ' + error))
       })

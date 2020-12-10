@@ -366,18 +366,6 @@ const stacksStore = {
         })
       })
     },
-    lookupContractInfo ({ commit }, projectId) {
-      return new Promise((resolve, reject) => {
-        const address = STACKS_API.replace('20443', '3999')
-        axios.get(address + '/extended/v1/contract/' + projectId + '?proof=0').then(response => {
-          store.commit('projectStore/addContractData', { projectId: projectId, info: response.data })
-          commit('setResult', { projectId: projectId, info: response.data })
-          resolve({ projectId: projectId, interface: response.data })
-        }).catch((error) => {
-          resolveError(reject, error)
-        })
-      })
-    },
     deployProjectContract ({ state, dispatch }, project) {
       return new Promise((resolve, reject) => {
         const sender = state.macsWallet

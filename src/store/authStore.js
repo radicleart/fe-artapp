@@ -42,7 +42,7 @@ const authOptions = {
   manifestPath: '/manifest.json',
   finished: authFinished,
   appDetails: {
-    name: 'Risidio Meshnet',
+    name: 'Risidio Artnet',
     icon: origin + '/img/logo/risidio_black.svg'
   }
 }
